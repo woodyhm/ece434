@@ -1,0 +1,10 @@
+I have done all of the 6 listed items which include:
+
+	1. installing the latest shipped image on the BeagleBone
+	2. setting up a host computer with Linux for kernel development
+	3. gathering all the needed SD cards, cables, etc.
+	4. installing git on my host
+	5. signing up for the two beagle Google groups
+	6. writing a simple Etch-a-sketch program
+
+For item 6, I used pygame to create a simple etch-a-sketch program. You use the arrow keys to draw, the spacebar to clear, and the escape key to close the winidow.
