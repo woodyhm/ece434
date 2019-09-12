@@ -8,3 +8,11 @@ I have done all of the 6 listed items which include:
 	6. writing a simple Etch-a-sketch program
 
 For item 6, I used pygame to create a simple etch-a-sketch program. You use the arrow keys to draw, the spacebar to clear, and the escape key to close the winidow.
+
+## Prof. Yoder's comments
+
+Nice etch_a_sketch.py.  Works on my host.
+Let's get pygame running on the bone.
+etch_a_sketch.py not executable.
+
+Grade:  9/10
