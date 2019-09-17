@@ -61,21 +61,23 @@ Questions for C:
     6. Try different values for the sleep time (2nd argument). What's the shortest period you can get? Make a table of the values you try and the corresponding period and processor usage.
     
         Sleep Time:                 Period:                 Processor Usage:
-        0.05                        404us                   38.5%
-        0.01                        405us                   39.9%
-        0.001                       406us                   40.0%
-        0.0001                      405us                   39.1%
-        0.00001                     407us                   41.5%
-        0.000001                    406us                   39.9%
+        0.05                        324us                   57.5%
+        0.01                        321us                   82.9%
+        0.001                       323us                   60.0%
+        0.0001                      326us                   78.1%
+        0.00001                     327us                   59.5%
+        0.000001                    325us                   68.9%
         
-        The shortest period I can get is 404us.
+        The shortest period I can get is 321us.
     
     7. How stable is the period? It stays within 0.1 ms and occasionally spikes up to around 500us
     8. Try launching something like vi. How stable is the period? The period became less stable
     9. Try cleaning up togglegpio.c and removing unneeded lines. The period seemed to stay the same.
     10. togglegpio uses bash (first line in file). there is no bash here.
-    11. What's the shortest period you can get? The shortest I can get is 404us.
+    11. What's the shortest period you can get? The shortest I can get is 321us.
     
-I wrote a program for the Etch-a-sketch game using buttons. I also added another button for reset and to end the program.
+I wrote a program for the Etch-a-sketch game using buttons. 
+I also added another button for reset and to end the program.
+The program can vary the playing area of the window.
 
     
