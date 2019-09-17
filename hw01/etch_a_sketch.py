@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # Hannah Woody
 # Etch-A-Sketch
 #
