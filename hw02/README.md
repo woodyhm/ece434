@@ -1,4 +1,5 @@
-I was able to wire up the buttons with the LEDs and make each LED light up according to a corresponding button. The program to achieve this is called BlinkLED.
+I was able to wire up the buttons with the LEDs and make each LED light up according to a corresponding button. 
+The program to achieve this is called BlinkLED.
 
 I then used an ocsilloscope to measure the output of your gpio pins and answer the following questions:
 
