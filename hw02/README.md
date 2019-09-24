@@ -82,3 +82,8 @@ I also added another button for reset and to end the program.
 The program can vary the playing area of the window.
 
     
+## Prof. Yoder's comments
+
+Looks good.
+
+Grade:  10/10
