@@ -16,3 +16,9 @@ config-pin P8_35 qep
 # eQEP 2
 config-pin P8_41 qep
 config-pin P8_42 qep
+
+## Prof. Yoder's comments
+
+Looks good.  
+
+Grade:  10/10
