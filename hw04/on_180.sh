@@ -24,19 +24,19 @@ sudo bash << EOF
     if lsmod | grep -q 'fbtft '        ; then rmmod --force fbtft;         fi
 
     # Set the pinmuxes for the display
-    # config-pin P9_19 gpio   # D/C
-    # config-pin P9_20 gpio   # RESET
-    # config-pin P9_18 spi    # spi 0_d1 MOSI
-    # config-pin P9_21 spi    # spi 0_d0 MISO
-    # config-pin P9_22 spi_sclk # spi 0_sclk
-    # config-pin P9_17 spi_cs # spi 0_cs0
+    config-pin P9_19 gpio   # D/C
+    config-pin P9_20 gpio   # RESET
+    config-pin P9_18 spi    # spi 0_d1 MOSI
+    config-pin P9_21 spi    # spi 0_d0 MISO
+    config-pin P9_22 spi_sclk # spi 0_sclk
+    config-pin P9_17 spi_cs # spi 0_cs0
     
-    config-pin P9_27 gpio   # D/C
-    config-pin P9_25 gpio   # RESET
-    config-pin P9_30 spi    # spi 1_d1 MOSI
-    config-pin P9_29 spi    # spi 1_d0 MISO
-    config-pin P9_31 spi_sclk # spi 1_sclk
-    config-pin P9_28 spi_cs # spi 1_cs0
+    # config-pin P9_27 gpio   # D/C
+    # config-pin P9_25 gpio   # RESET
+    # config-pin P9_30 spi    # spi 1_d1 MOSI
+    # config-pin P9_29 spi    # spi 1_d0 MISO
+    # config-pin P9_31 spi_sclk # spi 1_sclk
+    # config-pin P9_28 spi_cs # spi 1_cs0
     
     # LED pin, turn on
     ./backlight.py
@@ -44,7 +44,7 @@ sudo bash << EOF
     sleep 0.1
     
     # Insert the framebuffer modules
-    modprobe fbtft_device name=adafruit28 busnum=2 rotate=90 gpios=reset:$RESET,dc:$DC cs=0
+    modprobe fbtft_device name=adafruit28 busnum=1 rotate=180 gpios=reset:$RESET,dc:$DC cs=0
 
     # Turn off cursor
     while [ ! -e /dev/fb0 ]
