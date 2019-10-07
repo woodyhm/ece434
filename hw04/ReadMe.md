@@ -30,3 +30,9 @@ either.
 For the LCD display, I was able to meet all of the functionality requirements,
 which included displaying and rotating an image, displaying a text file, and 
 displaying a video.
+
+## Prof. Yoder's comments
+
+Did you demo the LCD to me?  I don't have a record of it.
+
+Grade:  7/10
