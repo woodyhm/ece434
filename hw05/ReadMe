@@ -20,5 +20,4 @@ This address (0x413008) is in our data section
 I did the exercises for the KERNEL MODULE.
 I did the exercise to copy P9_15 (GPIO 48) to P9_16 (GPIO 51).
 I created a file to toggle the LED.
-The period was around 150 us.
 
