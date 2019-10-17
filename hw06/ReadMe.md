@@ -47,3 +47,9 @@ Questions:
     It is now preemptive, because the irq interrupt goes to a small temporary 
     thread that allows higher priority, tasks to be placed on the process over 
     smaller priority threads.
+    
+## Prof. Yoder's comments
+
+Good answers.  Looking forward to seeing the plots.
+
+Grade:  5/10
