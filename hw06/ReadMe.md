@@ -48,6 +48,36 @@ Questions:
     thread that allows higher priority, tasks to be placed on the process over 
     smaller priority threads.
     
+    
+I also did the PREEMT_RT exercise. The make file would not work so I ran an
+infinint while loop. When the command was done running I got these values:
+
+real    1m40.225s
+user    0m1.000s
+sys     0m2.117s
+
+When I ran it in real time I got these values:
+
+real    1m40.203s
+user    0m0.728s
+sys     0m2.350s
+
+Then I ran it without any load. At first I got these values:
+
+real    1m40.214s
+user    0m0.551s
+sys     0m1.768s
+
+Then in real time I got these values:
+
+real    1m43.413s
+user    0m0.764s
+sys     0m1.724s
+
+The two plots with load are in a file called withLoad.png and the two plots
+without load are in a file called noLoad.png.
+
+    
 ## Prof. Yoder's comments
 
 Good answers.  Looking forward to seeing the plots.
