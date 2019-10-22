@@ -13,12 +13,12 @@ b.pinMode(button, b.INPUT);
 
 const AUTH = 'ygP_E6zj87ksieeokqwAY4qMPJ5sS9iK';
 
-
 var blynk = new Blynk.Blynk(AUTH);
 
 var v0 = new blynk.VirtualPin(0);
 var v10 = new blynk.WidgetLED(10);
 var v1 = new blynk.VirtualPin(1);
+
 
 v0.on('write', function(param) {
     console.log('V0:', param[0]);

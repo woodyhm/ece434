@@ -48,7 +48,11 @@ Questions:
     thread that allows higher priority, tasks to be placed on the process over 
     smaller priority threads.
     
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 1ab10b14da87f0477d1588a6a095e0d43aa43839
 I also did the PREEMT_RT exercise. The make file would not work so I ran an
 infinint while loop. When the command was done running I got these values:
 
@@ -77,3 +81,12 @@ sys     0m1.724s
 The two plots with load are in a file called withLoad.png and the two plots
 without load are in a file called noLoad.png.
 
+<<<<<<< HEAD
+=======
+    
+## Prof. Yoder's comments
+
+Good answers.  Looking forward to seeing the plots.
+
+Grade:  5/10
+>>>>>>> 1ab10b14da87f0477d1588a6a095e0d43aa43839
