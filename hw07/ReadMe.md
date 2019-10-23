@@ -17,3 +17,8 @@ blinked the physical LED on the bone using a virtual button.
 Then, I added a virtual slider into my blynk project and wired up an LED to 
 P9_14 on the bone. I added in the required code to leds.js to make the 
 slider control the brightness of the LED.
+
+## Prof. Yoder's comments
+Looks good.
+
+Grade:  10/10
