@@ -83,3 +83,10 @@ without load are in a file called noLoad.png.
 Good answers.  Looking forward to seeing the plots.
 
 Grade:  5/10
+
+## Prof. Yoder's newcomments
+
+Thanks for the plots.  It find the pulse on the right of the no load plot
+interesting.  I think it has to do with the loop in the shell command file.
+
+Grade:  10/10
