@@ -12,8 +12,3 @@
 
 
 5.9 Reading the Input at Regular Intervals
-
-
-
-
-5.10 Analog Wave Generator
