@@ -13,6 +13,7 @@
 
 
 
+<<<<<<< HEAD
 5.9 Reading the Input at Regular Intervals
 
 
@@ -28,3 +29,6 @@ Section     |  Speed (frequency) |   Jitter?     |   Stable?    |   Scope Filena
 
 
 
+=======
+5.9 Reading the Input at Regular Intervals
+>>>>>>> 02b9370e920746586ecee42f6c1eebc131677f45
