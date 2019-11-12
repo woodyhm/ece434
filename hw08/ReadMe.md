@@ -1,5 +1,5 @@
 2.6 Blinking an LED
-    I clones the PRUCookbook, configured the pins, and make the usr3 LED bink 
+    I cloned the PRUCookbook, configured the pins, and make the usr3 LED bink 
     by using the make command. make start starts running the code and make stop
     stops it. See table with results from plot: scope_2.6 summarized below.
     
@@ -41,3 +41,8 @@ Section     |  Speed (frequency) |   Jitter?     |   Stable?    |   Scope Filena
 5.9         |   5.21 Hz          |  No           |  Yes         |   scope_5.9      | 1.14
 5.10        |   No Edges         |  Yes          |  No          |   scope_5.10     |  -
 
+## Prof. Yoder's comments
+
+Looks good.  Did you filter the sinewave output?
+
+Grade:  10/10
