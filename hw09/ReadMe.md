@@ -19,3 +19,9 @@ THING SPEAK
 I created a new channel for reading the tempurature on ThingSpeak and put the 
 correct API keys in the keys_office.json file, edited and ran my temp.js file,
 and successfully completed the homework.
+
+## Prof. Yoder's comments
+
+Waiting for permission to see your sheet.
+
+Grade:  8/10
