@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+
 import Adafruit_BBIO.GPIO as GPIO
 from datetime import datetime
 import threading
@@ -45,24 +46,67 @@ count = 0;
 
 usr = datetime.now()
 
+#--------------------------------------------------------------
+schedule_queue = []
+#--------------------------------------------------------------
+
+
 def main():
     
-    while (1)
+    while (True):
         status = status_ref.get()
         # print(format(status.to_dict()[u'isBrewing']))
         if (format(status.to_dict()[u'isBrewing']) == "True"):
             print("About to start brewing")
             start_brewing()
-        time.sleep(10)
-        # requests.post(status_ref + 'serviceAccountKey.json', json.dumps(false))
+            time.sleep(10)
+        # requests.post(status_ref + 'serviceAccountKey.json', json.dumps(false)) # Posts things to firebase
         
         
         print(format(status.to_dict()[u'isBrewing']))
+        
+        newtime = 0
+        oldtime = 0
+        
         while (format(status.to_dict()[u'isBrewing']) == "False"):
             status = status_ref.get()
-            print("Blah")
+            now = datetime.now()
+            print(now)
             
+            
+            #getting time from firebase and converting it to usable format
+            newtime_string = format(status.to_dict()[u'scheduleBrewTime'])
+            newtime_array = datetime_parser(newtime_string)
+            
+            
+            year = newtime_array[0]
+            month = newtime_array[1]
+            day = newtime_array[2]
+            hour = newtime_array[3]
+            minute = newtime_array[4]
+            newtime = datetime(year,month,day,hour,minute)
+            time.sleep(1)
+           
+            
+            if oldtime != newtime:    
+                if newtime not in schedule_queue:
+                    oldtime = newtime
+                    schedule_queue.append(newtime)
+                    print("Queue updated")
+                    print(schedule_queue)
+            
+            for element in schedule_queue:
+                if element<=now:
+                    isBrewing = True
+                    print("isBrewing", isBrewing)
+                    schedule_queue.remove(element)
+                    print(schedule_queue)
+                    start_brewing()
+            
+        #     status = status_ref.get()
+        #     print("Blah")
     
+        
 def start_timer():
     usr_seconds = usr.hour * 3600 + usr.minute * 60 + usr.second
     now_seconds = now.hour * 3600 + now.minute * 60 + now.second
@@ -73,14 +117,21 @@ def start_timer():
 def start_brewing():
     print("Coffee brewing")
     GPIO.output(brew, on)
-    stop_time = threading.Timer(10,stop_brewing)
+    stop_time = threading.Timer(180,stop_brewing)
     stop_time.start()
-    time.sleep(10)
+    #time.sleep(300)
     
 def stop_brewing():
     print("Coffee has been made")
     GPIO.output(brew, off)
-    
+
+def datetime_parser(date_string):
+    year = int(date_string[0:4])
+    month = int(date_string[5:7])
+    day = int(date_string[8:10])
+    hour = int(date_string[11:13])
+    minute = int(date_string[14:16])
+    return [year, month, day, hour, minute]
 
 if __name__ == '__main__':
     main()

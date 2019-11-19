@@ -15,7 +15,7 @@ GPIO.setup(brew, GPIO.OUT, pull_up_down=GPIO.PUD_DOWN)
 now = datetime.now()
 
 #New Brew Time input from user
-usr = datetime(2019,11,11,20,03) # Set by the website eventually
+usr = datetime(2019,11,12,20,3) # Set by the website eventually
 
 
 def main():
